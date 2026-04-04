@@ -28,5 +28,13 @@
 npm install
 # Edit .env.local
 NEXT_PUBLIC_API_URL=http://localhost:9090
+
+For Vercel deployment, add:
+
+BACKEND_API_URL=https://your-backend-domain.com
+
+Notes:
+- Frontend calls are proxied through /api/proxy in production.
+- BACKEND_API_URL must point to your deployed Spring Boot backend.
 npm run dev   # → http://localhost:3000
 ```
